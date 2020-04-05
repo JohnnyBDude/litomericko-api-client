@@ -1,0 +1,1 @@
+# litomericko-api-client
