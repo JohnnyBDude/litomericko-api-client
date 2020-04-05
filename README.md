@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+
+Branch master is automatically deployed to heroku app - https://litomericko-api-client.herokuapp.com/
+
+mars/create-react-app-buildpack is used to provision the environement. That had to be set up on heroku
+using project url - https://github.com/mars/create-react-app-buildpack
+
+## Debug
+
+### Show heroku error logs
+
+You can show error logs from heroku like this:
+
+```heroku logs -a litomericko-api-client```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
