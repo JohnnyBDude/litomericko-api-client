@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Litomericko-api-client
         </p>
+            <Button>Bootstrap button</Button>
       </header>
     </div>
   );
