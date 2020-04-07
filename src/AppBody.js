@@ -7,27 +7,46 @@ import CompanyDetail from "./CompanyDetail";
 
 function AppBody() {
     return (
-            <Container>
-                <Switch>
-                    <Route path="/podniky/kategorie/:categorySlug">
-                        <CompaniesByCategory/>
-                    </Route>
-                    <Route path="/podniky/detail/:companyId">
-                        <CompanyDetail/>
-                    </Route>
-                    <Route path="/">
-                        <Home/>
-                    </Route>
-                </Switch>
-            </Container>
+        <Container>
+            <Switch>
+                <Route path="/podniky/kategorie/:categorySlug">
+                    <CompaniesByCategory/>
+                </Route>
+                <Route path="/podniky/detail/:companyId">
+                    <CompanyDetail/>
+                </Route>
+                <Route path="/">
+                    <Home/>
+                </Route>
+            </Switch>
+        </Container>
     );
 }
 
 const Home = () => {
-    return `I'm baby raclette food truck brunch, YOLO dreamcatcher skateboard bicycle rights tacos helvetica microdosing.
-    PBR&B VHS seitan jianbing man bun stumptown. Roof party jianbing meditation trust fund kinfolk.
-    Authentic pickled truffaut hexagon selvage post-ironic,
-    synth typewriter photo booth fingerstache quinoa banh mi snackwave.`
+    return (
+        <>
+            <h1>Vítejte na experimentálním klientu litomericko-api</h1>
+            <p>Jde pouze o funkční prototyp</p>
+            <ul>
+                <li>Funguje katalog podniků - v tuto chvíli bez mapy</li>
+                <li>Nefunguje vyhledávání</li>
+            </ul>
+            <p>
+                Podněty a dotazy uvítáme na
+                <a href="mailto:team@litohub.cz"> team@litohub.cz </a>
+                nebo na stránkách projektu na GitHubu -
+                <a href={"https://github.com/JohnnyBDude/litomericko-api-client"}> github.com/JohnnyBDude/litomericko-api-client </a>
+            </p>
+            <p>
+                Zapojit se do vývoje a diskuze o budoucí podobě můžeš na
+                    Discordovém diskuzním serveru Litohubu, kanál
+                <a href={"https://discord.gg/A43H3AT"}>
+                    <strong> #litaksipomaha</strong>
+                </a>
+            </p>
+        </>
+    )
 };
 
 export default AppBody;
