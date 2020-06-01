@@ -4,6 +4,7 @@ import {Route, Switch} from "react-router-dom";
 import CompaniesByCategory from "./companies/CompaniesByCategory";
 import Container from "react-bootstrap/Container";
 import CompanyDetail from "./CompanyDetail";
+import Test from "./Test";
 
 function AppBody() {
     return (
@@ -14,6 +15,9 @@ function AppBody() {
                 </Route>
                 <Route path="/podniky/detail/:companyId">
                     <CompanyDetail/>
+                </Route>
+                <Route path="/test">
+                    <Test/>
                 </Route>
                 <Route path="/">
                     <Home/>
