@@ -37,7 +37,7 @@ const Home = () => {
             <h1>Vítejte na experimentálním klientu litomericko-api</h1>
             <p>Jde pouze o funkční prototyp</p>
             <ul>
-                <li>Funguje katalog podniků - v tuto chvíli bez mapy</li>
+                <li>Funguje katalog podniků - včetně základní mapy</li>
                 <li>Nefunguje vyhledávání</li>
             </ul>
             <p>
