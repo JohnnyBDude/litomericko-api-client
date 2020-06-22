@@ -15,6 +15,7 @@ function Navigation() {
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                   <CompanyCategoriesDropdown/>
+                  <Nav.Link href={"/mapa"}>Mapa podniků</Nav.Link>
               </Nav>
               <Form inline>
                   <FormControl type="text" placeholder="Hledej" className="mr-sm-2" />

@@ -3,6 +3,7 @@ import './MyMap.css'
 
 import {Map, Marker, Popup, TileLayer} from 'react-leaflet'
 import companies from "./data/mockData/companies";
+import CompanyCard from "./CompanyCard";
 
 const litomericeCenter = [50.534, 14.131]
 
@@ -39,7 +40,9 @@ const formatPosition = (company) => {
 const CompanyMarker = ({company}) => {
     return (
         <Marker position={formatPosition(company)} >
-            <Popup>{company.title}</Popup>
+            <Popup>
+               <CompanyCard company={company} />
+            </Popup>
         </Marker>
     )
 }

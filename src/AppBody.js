@@ -20,7 +20,7 @@ function AppBody() {
                 <Route path="/test">
                     <Test/>
                 </Route>
-                <Route path="/map">
+                <Route path="/mapa">
                     <MyMap/>
                 </Route>
                 <Route path="/">
