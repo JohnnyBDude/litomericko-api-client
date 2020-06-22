@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {categoriesUrl} from "./urls";
+import {companyCategoriesUrl} from "./urls";
 import axios from "axios";
 
 function Test() {
     const [categories, setCategories] = useState([]);
 
     useEffect(async () => {
-        const result = await axios(categoriesUrl);
+        const result = await axios(companyCategoriesUrl);
         console.log(result);
         setCategories(result.data);
     }, []);

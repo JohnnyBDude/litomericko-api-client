@@ -5,6 +5,7 @@ import CompaniesByCategory from "./companies/CompaniesByCategory";
 import Container from "react-bootstrap/Container";
 import CompanyDetail from "./CompanyDetail";
 import Test from "./Test";
+import MyMap from "./MyMap";
 
 function AppBody() {
     return (
@@ -18,6 +19,9 @@ function AppBody() {
                 </Route>
                 <Route path="/test">
                     <Test/>
+                </Route>
+                <Route path="/map">
+                    <MyMap/>
                 </Route>
                 <Route path="/">
                     <Home/>
